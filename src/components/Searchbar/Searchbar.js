@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 const Searchbar = (props) => {
   const { onSubmit } = props;
-  const [query, setQuery] = useState('')
+  const [query, setQuery] = useState('');
 
   const handleChange = event => {
     setQuery(event.currentTarget.value)
