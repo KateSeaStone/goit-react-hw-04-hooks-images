@@ -29,9 +29,6 @@ const Modal = (props) => {
     }
   }
 
-  //const clickOnImage = () => onClose();
-
-
   return createPortal(
     <div className="Overlay" onClick={handleOverlayClick} >
       <div className="Modal" >
@@ -41,7 +38,6 @@ const Modal = (props) => {
           onClick={onClose} />
       </div>
     </div>, modalRoot);
-
 }
 
 

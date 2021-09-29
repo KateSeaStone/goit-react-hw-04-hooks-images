@@ -24,10 +24,10 @@ const ImageGallery = (props) => {
   return (
     <>
       <ul className="ImageGallery">
-        {images.map(image => (
+        {images.map((image, index) => (
           <ImageGalleryItem
-            key={image.id}
-            id={image.id}
+            key={`${index}_${image.id}`}
+            id={`${index}_${image.id}`}
             preview={image.webformatURL}
             original={image.largeImageURL}
             showModal={openModal}

@@ -20,7 +20,7 @@ const ImageGalleryItem = (props) => {
 }
 
 ImageGalleryItem.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   webformatURL: PropTypes.string,
   largeImageURL: PropTypes.string,
   showModal: PropTypes.func.isRequired,
